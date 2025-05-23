@@ -1,16 +1,35 @@
+:root {
+    --color-royal-blue-traditional: #00296b;
+    --color-marian-blue: #003f88;
+    --color-polynesian-blue: #00509d;
+    --color-mikado-yellow: #fdc500;
+    --color-gold: #ffd500;
+    --color-background: #ffffff;
+    --color-text-primary: #212529;
+    --color-text-secondary: #495057;
+    --color-border: #dee2e6;
+    --color-light-background: #f8f9fa;
+}
+
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     line-height: 1.6;
-    background-color: #f4f7f6; /* Light gray background */
-    color: #333333; /* Dark gray text */
+    /* background-color: #f4f7f6; */ /* Light gray background - Replaced by var() */
+    /* color: #333333; */ /* Dark gray text - Replaced by var() */
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-marian-blue);
 }
 
 h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #005A9C; /* Muted blue accent color */
+    /* color: #005A9C; */ /* Muted blue accent color - Replaced by h1-h6 rule */
     text-align: center;
     margin-bottom: 10px;
 }
@@ -24,7 +43,7 @@ h1 + p { /* Selects the first paragraph immediately following an h1 */
 
 h2 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #005A9C; /* Muted blue accent color */
+    /* color: #005A9C; */ /* Muted blue accent color - Replaced by h1-h6 rule */
     border-bottom: 1px solid #dddddd; /* Lighter gray border */
     padding-bottom: 5px;
     margin-top: 30px;
@@ -42,24 +61,30 @@ nav ul li {
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #005A9C; /* Muted blue accent color for nav links */
+    /* text-decoration: none; */
+    /* color: #005A9C; */ /* Muted blue accent color for nav links - Replaced by var() */
+    color: var(--color-polynesian-blue);
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
-    color: #003d6b; /* Darker shade of blue for hover */
+    /* text-decoration: underline; */
+    /* color: #003d6b; */ /* Darker shade of blue for hover - Replaced by var() */
+    color: var(--color-royal-blue-traditional);
 }
 
 /* General link styling */
 a {
-    color: #005A9C; /* Muted blue accent color for general links */
-    text-decoration: none;
+    /* color: #005A9C; */ /* Muted blue accent color for general links - Replaced by var() */
+    /* text-decoration: none; */
+    color: var(--color-polynesian-blue);
+    text-decoration: none; /* This is kept as per new style, but old one is commented */
 }
 
 a:hover {
-    text-decoration: underline;
-    color: #003d6b; /* Darker shade of blue for hover */
+    /* text-decoration: underline; */
+    /* color: #003d6b; */ /* Darker shade of blue for hover - Replaced by var() */
+    text-decoration: underline; /* This is kept as per new style */
+    color: var(--color-royal-blue-traditional);
 }
 
 /* Specific styling for contact section if needed.
@@ -71,4 +96,20 @@ a:hover {
 */
 .contact-section p {
      line-height: 1.8;
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: var(--color-mikado-yellow);
+    color: var(--color-text-primary); /* Using --color-text-primary for better contrast */
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline from button styled as link */
+    display: inline-block; /* To allow padding and other block properties */
+}
+
+.btn-primary:hover {
+    filter: brightness(90%);
 }
