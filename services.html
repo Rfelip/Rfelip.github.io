@@ -5,6 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serviços - Ruan Felipe da Silva e Sousa</title>
     <link rel="stylesheet" href="style.css"> <!-- Link to the existing style.css -->
+    <style>
+        /* Estilos para centralizar o conteúdo das seções de serviço e contato */
+        #it-services, 
+        #math-tutoring, 
+        #service-contact-details {
+            text-align: center; /* Centraliza texto e elementos inline/inline-block como imagens */
+        }
+
+        #it-services ul, 
+        #math-tutoring ul {
+            display: inline-block; /* Permite que a lista seja centralizada como um bloco */
+            text-align: left;    /* Mantém o texto dentro dos itens da lista alinhado à esquerda */
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        /* Ajuste para a imagem de placeholder já existente, para que ela também centralize */
+        #it-services img,
+        #math-tutoring img {
+            display: block; 
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 15px; 
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -22,62 +46,72 @@
 
     <main>
         <h2>Meus Serviços</h2>
+        <p style="text-align: center;">Com dedicação e expertise, ofereço um conjunto de serviços especializados, unindo conhecimento técnico aprofundado e experiência prática para solucionar suas demandas. Descubra como posso auxiliá-lo nas áreas abaixo:</p>
 
         <section id="it-services">
-            <h3>Ruan Felipe Tecnologia e PCs</h3>
-            <img src="https://via.placeholder.com/300x200" alt="Imagem de placeholder para serviços de TI" style="max-width:300px; height:auto; margin:10px 0;">
-            <h4>Problemas com tecnologia? Eu posso ajudar!</h4>
+            <h3>Soluções em TI</h3>
+            <img src="https://via.placeholder.com/300x200" alt="Serviços de Tecnologia da Informação" style="max-width:300px; height:auto;"> 
+            <!-- Texto original da introdução da Seção 1, conforme solicitado -->
+            <p>Com foco em soluções eficientes e personalizadas, ofereço suporte técnico completo para seus equipamentos e necessidades digitais.</p>
+            
             <p><strong>Serviços Oferecidos:</strong></p>
             <ul>
                 <li>
-                    <strong>Manutenção e Limpeza de PCs:</strong> Diagnóstico preciso, reparos eficientes, remoção de vírus, limpeza interna completa e troca de componentes defeituosos.
+                    <!-- Texto sugerido para este item -->
+                    <strong>Manutenção e Limpeza de Computadores:</strong> Diagnóstico preciso e reparos eficientes, incluindo remoção de vírus, formatação, otimização de sistema, limpeza interna minuciosa e substituição de componentes.
                 </li>
                 <li>
-                    <strong>Consultoria em Informática:</strong> Aprenda a utilizar melhor seu PC e softwares do dia a dia, otimização de desempenho, organização digital de arquivos e instalação e configuração de programas essenciais.
+                    <strong>Consultoria em Informática:</strong> Orientação para melhor utilização do seu PC e softwares, otimização de desempenho, organização digital de arquivos, além de instalação e configuração de programas essenciais.
                 </li>
                 <li>
-                    <strong>Montagem e Upgrade de PCs:</strong> Montagem de PCs personalizados para todas as necessidades (gamer, trabalho, estudo), consultoria especializada para escolher as melhores peças e realizar upgrades que valem a pena.
+                    <strong>Montagem e Upgrade de Computadores:</strong> Montagem de PCs personalizados para diversas finalidades (gamer, trabalho, estudo), consultoria especializada para a escolha das melhores peças e realização de upgrades estratégicos.
                 </li>
             </ul>
-            <p>
-                <strong>Área de Atendimento:</strong> Atendo toda a região do Recreio/Barra.
-            </p>
-            <p>
-                <strong>Contato para Serviços de TI:</strong> (21) 98814-7472 | <a href="mailto:ruanfelipe2010@gmail.com">ruanfelipe2010@gmail.com</a>
-            </p>
-            <p><em>Orçamento sem compromisso!</em></p>
-            <!-- Optional: Embed or link to the visual ad graphic if desired -->
         </section>
 
+        <hr style="margin: 30px 0;"> <!-- Visual separator -->
+
         <section id="math-tutoring">
-            <h3>Prof. Ruan Felipe - Aulas Particulares</h3>
-            <img src="https://via.placeholder.com/300x200" alt="Imagem de placeholder para aulas particulares" style="max-width:300px; height:auto; margin:10px 0;">
-            <h4>COMECE A ESTUDAR AGORA!</h4>
+            <h3>Aulas Particulares de Matemática</h3>
+            <img src="https://via.placeholder.com/300x200" alt="Aulas particulares de Matemática" style="max-width:300px; height:auto;">
+            <!-- Texto sugerido para a introdução da Seção 2 -->
+            <p>Comprometido em auxiliar estudantes a desenvolverem seu pleno potencial em matemática, ministro aulas particulares focadas na obtenção de resultados e na consolidação da compreensão dos conceitos fundamentais.</p>
+            
             <p><strong>Serviços Oferecidos:</strong></p>
             <ul>
                 <li>
-                    <strong>Reforço em Matemática:</strong> Supere suas dificuldades! Aulas presenciais e online, totalmente personalizadas para o seu aprendizado e com foco nos seus objetivos acadêmicos.
+                    <!-- Texto sugerido para este item -->
+                    <strong>Reforço Escolar em Matemática:</strong> Supere suas dificuldades com aulas presenciais ou online, planejadas de forma personalizada para seu ritmo de aprendizado e alinhadas aos seus objetivos acadêmicos.
                 </li>
                 <li>
-                    <strong>Preparatório para Militar em Matemática:</strong> Alcance sua aprovação! Prepare-se com quem entende do caminho, utilizando estratégias de estudo e conteúdo direcionado para os principais concursos militares.
+                    <!-- Texto sugerido para este item -->
+                    <strong>Preparatório para Concursos Militares (Matemática):</strong> Prepare-se para a aprovação com um ensino direcionado. Aplico estratégias de estudo eficazes e conteúdo programático focado nos principais concursos militares.
                 </li>
             </ul>
-            <p><strong>Por que Estudar Comigo:</strong></p>
+            <p><strong>Diferenciais do Meu Ensino:</strong></p>
+            <!-- Textos sugeridos para estes itens -->
             <ul>
-                <li>Formação especializada em Matemática Aplicada pela UFRJ.</li>
-                <li>Experiência real com aprovação em concursos militares.</li>
-                <li>Metodologia de ensino focada nas suas necessidades individuais de aprendizado.</li>
-                <li>Aulas dinâmicas, objetivas e com material de apoio.</li>
+                <li>Sólida formação em Matemática Aplicada pela UFRJ.</li>
+                <li>Vivência prática e aprovação em concursos militares.</li>
+                <li>Metodologia de ensino flexível, adaptada às necessidades individuais de cada aluno.</li>
+                <li>Aulas dinâmicas e objetivas, enriquecidas com material de apoio selecionado.</li>
+                <li>Foco no desenvolvimento da confiança e autonomia do estudante na resolução de problemas.</li>
             </ul>
-            <p>
-                <strong>Contato para Aulas Particulares:</strong> Telefone/WhatsApp: (21) 98814-7472
-            </p>
-            <!-- Optional: Embed or link to the visual ad graphic if desired -->
+        </section>
+
+        <hr style="margin: 30px 0;"> <!-- Visual separator -->
+
+        <section id="service-contact-details">
+            <h3>Contato para Serviços</h3>
+            <!-- Texto sugerido para a introdução da Seção de Contato -->
+            <p>Interessado em algum dos serviços? Para mais informações, orçamentos ou agendamentos, entre em contato através dos canais abaixo:</p>
+            <p><strong>Telefone/WhatsApp:</strong> (21) 98814-7472</p>
+            <p><strong>Email:</strong> <a href="mailto:ruanfelipe2010@gmail.com">ruanfelipe2010@gmail.com</a></p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; <script>document.write(new Date().getFullYear())</script> Ruan Felipe da Silva e Sousa. Todos os direitos reservados.</p>
+        <p>© <script>document.write(new Date().getFullYear())</script> Ruan Felipe da Silva e Sousa. Todos os direitos reservados.</p>
         <p>
             <a href="index.html">Início</a> |
             <a href="contact.html">Contato</a>
