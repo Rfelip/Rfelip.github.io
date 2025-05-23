@@ -179,3 +179,13 @@ main a:hover,
 .btn-primary:hover {
     filter: brightness(90%);
 }
+
+footer {
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 5px;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
