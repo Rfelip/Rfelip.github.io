@@ -2,8 +2,12 @@
     --color-royal-blue-traditional: #00296b;
     --color-marian-blue: #003f88;
     --color-polynesian-blue: #00509d;
+    --color-sky-blue: #0A4FBD;
+    --color-deep-ocean-blue: #0F20C3;
     --color-mikado-yellow: #fdc500;
     --color-gold: #ffd500;
+    --color-accent-orange: #FF8700;
+    --color-pale-yellow: #FFCF4D;
     --color-background: #ffffff;
     --color-text-primary: #212529;
     --color-text-secondary: #495057;
@@ -19,17 +23,65 @@ body {
     line-height: 1.6;
     /* background-color: #f4f7f6; */ /* Light gray background - Replaced by var() */
     /* color: #333333; */ /* Dark gray text - Replaced by var() */
-    background-color: var(--color-background);
-    color: var(--color-text-primary);
+    background-color: var(--color-sky-blue);
+    color: var(--color-background);
+}
+
+main {
+    background-color: var(--color-royal-blue-traditional);
+    color: var(--color-pale-yellow);
+    padding: 20px;
+}
+
+.professional-subtitle {
+    color: var(--color-background); /* Updated for sky-blue body background */
+    text-align: center; /* As per previous h1+p styling */
+    font-size: 1.1em; /* As per previous h1+p styling */
+    margin-bottom: 30px; /* As per previous h1+p styling */
+}
+
+.content-section {
+    background-color: var(--color-royal-blue-traditional);
+    color: var(--color-pale-yellow);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px; /* Added for softer edges */
+}
+
+.content-section h2 {
+    color: var(--color-pale-yellow);
+    border-bottom: 1px solid var(--color-pale-yellow);
+    text-align: center;
+}
+
+/* Ensure paragraph text within content-section is also white, if not already covered */
+.content-section p {
+    color: var(--color-pale-yellow);
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: var(--color-marian-blue);
+    color: var(--color-background);
+}
+
+/* Headings directly within main */
+main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6 {
+    color: var(--color-pale-yellow); /* Override general heading color for main */
+    border-bottom-color: var(--color-pale-yellow); /* Affects h2's existing border, sets color for others if they have a border */
+}
+
+/* Specifically target H2 page titles that are direct children of main */
+main > h2 {
+    text-align: center;
 }
 
 h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    /* color: #005A9C; */ /* Muted blue accent color - Replaced by h1-h6 rule */
+    color: var(--color-pale-yellow); /* Updated for sky-blue body background */
     text-align: center;
     margin-bottom: 10px;
 }
@@ -37,7 +89,7 @@ h1 {
 h1 + p { /* Selects the first paragraph immediately following an h1 */
     text-align: center;
     font-size: 1.1em;
-    color: #555; /* Slightly lighter than main text */
+    color: var(--color-background); /* Updated for sky-blue body background */
     margin-bottom: 30px;
 }
 
@@ -63,20 +115,21 @@ nav ul li {
 nav ul li a {
     /* text-decoration: none; */
     /* color: #005A9C; */ /* Muted blue accent color for nav links - Replaced by var() */
-    color: var(--color-polynesian-blue);
+    color: var(--color-pale-yellow); /* Updated for sky-blue body background */
 }
 
 nav ul li a:hover {
     /* text-decoration: underline; */
     /* color: #003d6b; */ /* Darker shade of blue for hover - Replaced by var() */
-    color: var(--color-royal-blue-traditional);
+    color: var(--color-mikado-yellow); /* Updated for sky-blue body background hover */
+    text-decoration: underline; /* Ensure underline on hover */
 }
 
 /* General link styling */
 a {
     /* color: #005A9C; */ /* Muted blue accent color for general links - Replaced by var() */
     /* text-decoration: none; */
-    color: var(--color-polynesian-blue);
+    color: var(--color-background); /* Updated for dark background */
     text-decoration: none; /* This is kept as per new style, but old one is commented */
 }
 
@@ -84,7 +137,20 @@ a:hover {
     /* text-decoration: underline; */
     /* color: #003d6b; */ /* Darker shade of blue for hover - Replaced by var() */
     text-decoration: underline; /* This is kept as per new style */
-    color: var(--color-royal-blue-traditional);
+    color: var(--color-background); /* Updated for dark background */
+}
+
+/* Links within dark content areas (main, .content-section) */
+main a,
+.content-section a {
+    color: var(--color-pale-yellow);
+    text-decoration: none; /* Consistent with general links */
+}
+
+main a:hover,
+.content-section a:hover {
+    color: var(--color-mikado-yellow); /* Brighter yellow for hover */
+    text-decoration: underline;
 }
 
 /* Specific styling for contact section if needed.
